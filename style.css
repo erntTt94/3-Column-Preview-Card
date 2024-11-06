@@ -1,0 +1,131 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+#card {
+    max-width: 70%;
+    min-height: 56vh;
+    display: flex;
+
+}
+
+.card-box {
+    flex: 1;
+    padding-left: 3em;
+}
+
+.card-box:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.card-box:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-box:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.card-img {
+    margin: 2.2rem 0;
+}
+
+.card-header {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 0;
+}
+
+.card-info {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin: 2.2rem 0;
+    padding-right: 2em;
+}
+
+.card-button {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1em 3em;
+    background-color: hsl(0, 0%, 95%);
+    border: 0.1em solid hsl(0, 0%, 95%);
+    border-radius: 1.5em;
+    margin: 2.4rem 0;
+    font-weight: 400;
+}
+
+#sedansBtn {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvBtn {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxuryBtn {
+    color: hsl(179, 100%, 13%);
+}
+
+.card-button:hover {
+    cursor: pointer;
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+#luxuryBtn:hover,
+#suvBtn:hover,
+#sedansBtn:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 1040px) {
+    #card {
+        min-width: 60%;
+        max-width: 86%;
+    }
+}
+
+@media (max-width: 800px) {
+    #card {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .card-header {
+        margin-bottom: 0.3em;
+    }
+
+    .card-button {
+        margin-top: 0;
+    }
+
+    .card-box:nth-of-type(1) {
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        border-bottom-left-radius: 0;
+    }
+
+    .card-box:nth-of-type(3) {
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        border-top-right-radius: 0;
+    }
+
+}
